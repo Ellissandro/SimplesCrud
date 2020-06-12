@@ -1,0 +1,53 @@
+﻿
+@model SimplesCrud.Models.Usuario
+@{
+    ViewData["Title"] = "Painel";
+}
+
+    <form asp-action="Cadastro" asp-controller="Home" method="post">
+        <input type="hidden" asp-for="Id" />
+        <main role="main">
+
+            <section class="container" style="margin-top: 50px">
+                <div class="row">
+                    <aside class="col-sm-4">
+                        <h3 class="subtitle-doc">
+                            Painel do usuário
+                        </h3>
+                        <p>Em breve novas funcionalidades serão implementadas</p>
+                        <br />
+                        <br />
+                        <div id="code_register_1">
+                            <div class="card">
+                                <a class="btn btn-danger btn-block" href="/Home/Sair"> Sair </a>
+                            </div>
+
+                        </div>
+                    </aside>
+                    <aside class="col-sm-4">
+                        -
+                    </aside>
+                    <aside class="col-sm-4">
+                        <h3 class="subtitle-doc">
+                            Outros
+                        </h3>
+                        <p>Funcionalidades em andamento</p>
+                        <br />
+                        <br />
+                        <div id="code_register_1">
+                            <div class="card">
+                                <button type="button" class="btn btn-primary btn-block" disabled>Atualizar</button>
+                                <button type="button" class="btn btn-secondary btn-block" disabled>Buscar</button>
+                                <button type="button" class="btn btn-success btn-block" disabled>Excluir</button>
+                                <button type="button" class="btn btn-danger btn-block" disabled>-</button>
+                            </div>
+
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </main>
+    </form>
+
+
+
